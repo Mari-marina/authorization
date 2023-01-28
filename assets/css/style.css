@@ -950,3 +950,20 @@ a {
 .authorization_textPassword {
     margin-top: 30px;
 }
+
+.authorization_inputWrap-img {
+    position: relative;
+    max-width: 635px;
+    width: 100%;
+}
+
+.authorization_input-img {
+    position: absolute;
+    border: none;
+    height: 46px;
+    width: 46px;
+    right: 7px;
+    background: white;
+    border-left: 1px solid black;
+    top: 2px;
+}
