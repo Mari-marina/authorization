@@ -625,7 +625,7 @@ a {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 52px;
+    margin-bottom: 56px;
     display: block;
 }
 
@@ -713,6 +713,7 @@ a {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    color: #000000;
 }
 
 .authorization_button_block {
@@ -739,6 +740,10 @@ a {
     .authorization_button:first-child {
         margin-bottom: 20px;
     }
+}
+
+.text-forget {
+    font-weight: 600;
 }
 
 .authorization_text-bottom:nth-child(2) {
@@ -885,6 +890,22 @@ a {
 }
 
 .authorization_first-block {
+    display: block;
+}
+
+.authorization_second-block {
+    display: none;
+}
+
+.second-block-active {
+    display: none;
+}
+
+.first-block-active {
+    display: block;
+}
+
+.first-block-inactive {
     display: none;
 }
 
