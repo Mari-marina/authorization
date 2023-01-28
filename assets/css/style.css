@@ -447,6 +447,12 @@ a {
     margin-bottom: 50px;
 }
 
+@media (max-width: 470px) {
+    .authorization_title {
+        font-size: 20px;
+    }
+}
+
 .authorization_text {
     font-family: "Montserrat";
     font-style: normal;
@@ -555,8 +561,6 @@ a {
 .authorization_list {
     display: -ms-flexbox;
     display: flex;
-    max-width: 416px;
-    width: 100%;
 }
 
 .authorization_item:not(:last-child)::after {
@@ -602,7 +606,6 @@ a {
     }
 
     .authorization_list {
-        max-width: 276px;
         padding-top: 13px;
     }
 
@@ -994,7 +997,8 @@ a {
 .authorization_text-inputTel,
 .authorization_textPassword2,
 .registration_textPassword,
-.authorization_text-inputSMS {
+.authorization_text-inputSMS,
+.authorization_textRecovery {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -1011,7 +1015,8 @@ a {
 .authorization_text-inputTel::after,
 .authorization_textPassword2::after,
 .registration_textPassword::after,
-.authorization_text-inputSMS::after {
+.authorization_text-inputSMS::after,
+.authorization_textRecovery::after {
     content: "*";
     position: absolute;
     color: red;
@@ -1023,6 +1028,11 @@ a {
 .authorization_text-inputSMS::after {
     top: 4px;
     right: -17px;
+}
+
+.authorization_textRecovery::after {
+    top: 4px;
+    right: -14px;
 }
 
 .authorization_textEmail::after {
@@ -1073,6 +1083,10 @@ a {
     top: 2px;
 }
 
+.recovery_input {
+    padding-left: 65px;
+}
+
 .registration_block {
     margin-top: 50px;
 }
@@ -1100,7 +1114,8 @@ a {
     color: #959595;
 }
 
-.registration_button_block {
+.registration_button_block,
+.registration_button_block_change {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -1110,11 +1125,19 @@ a {
     margin-top: 60px;
     max-width: 767px;
     width: 100%;
+}
+
+.registration_button_block_change {
+    margin-bottom: 50px;
+}
+
+.registration_button_block {
     margin-bottom: 226px;
 }
 
 @media (max-width: 520px) {
-    .registration_button_block {
+    .registration_button_block,
+  .registration_button_block_change {
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
@@ -1219,4 +1242,96 @@ a {
 
 .registration_sms {
     display: none;
+}
+
+.registration_button_block_change {
+    max-width: 635px;
+}
+
+.recovery_line {
+    color: #D9D9D9;
+    height: 1px;
+    width: 100%;
+}
+
+.recovery_bottom_wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+@media (max-width: 520px) {
+    .recovery_bottom_wrapper {
+        display: none;
+    }
+}
+
+.recovery_bottom_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #868686;
+    width: 100%;
+    max-width: 193px;
+    cursor: pointer;
+}
+
+.recovery_text-green {
+    display: none;
+}
+
+.recovery_text-green {
+    background: #E6F8DE;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 900px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #5E9148;
+    margin-bottom: 192px;
+}
+
+@media (max-width: 470px) {
+    .recovery_text-green {
+        margin-bottom: 428px;
+    }
+
+    .recovery_textEmail {
+        font-size: 10px;
+    }
+}
+
+.recovery_textEmail {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #868686;
+    margin-bottom: 50px;
+}
+
+.recovery_wrap_input {
+    position: relative;
+}
+
+.recovery_input_img {
+    position: absolute;
+    border: none;
+    height: 46px;
+    width: 46px;
+    left: 7px;
+    background: white;
+    border-right: 1px solid black;
+    top: 2px;
 }
