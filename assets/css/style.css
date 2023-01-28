@@ -566,6 +566,11 @@ a {
     border: 1px solid #000000;
     border-radius: 10px;
     padding: 0 0 0 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .authorization_input::-webkit-input-placeholder {
